@@ -1,20 +1,39 @@
+.topnav {
+	overflow: hidden;
+	backface-visibility: hidden;
+}
+
+.topnav a{
+	float: right;
+    display: block;
+    color: White;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    color: black;
+}
+
 body {
 	background-color: white;
-	background-image: url( "WebsiteBackground1.jpg" );
+	background-image: url( "WebsiteOverallBackground.jpg" );
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-attachment: fixed;
+	background-size: cover;
 }
 
 h1 {
-	color: dodgerblue;
+	color: white;
 	text-align: center;
 	font-family: arial;
 	font-size: 30px;
 }
 
 h2 {
-	color: dodgerblue;
+	color: white;
 	text-align: center;
 	font-family: arial;
 	font-size: 20px;
