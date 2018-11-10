@@ -5,15 +5,24 @@
 
 .topnav a{
 	float: right;
-    display: block;
     color: White;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+	font-family: arial;
 }
 
 .topnav a:hover {
     color: black;
+}
+
+img {
+	border-radius: 150px;
+	/*border: 5px solid white;*/
+	width: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 body {
@@ -21,19 +30,31 @@ body {
 	background-image: url( "Images/WebsiteOverallBackground.jpg" );
 	background-repeat: no-repeat;
 	background-position: center top;
-	background-attachment: fixed;
 	background-size: cover;
 }
 
+#Introduction{
+	background-image: url( "Images/BackgroundMeme.png" );
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 800px 800px;
+	border: 5px solid white;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 150px;
+}
+
 h1 {
-	color: white;
+	color: rgb( 255, 255, 255 );
 	text-align: center;
 	font-family: arial;
+	font-weight: bold;
 	font-size: 30px;
 }
 
 h2 {
-	color: white;
+	color: rgb( 255, 255, 255 );
 	text-align: center;
 	font-family: arial;
 	font-size: 20px;
