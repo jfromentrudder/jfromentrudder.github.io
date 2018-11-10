@@ -1,24 +1,26 @@
 .topnav {
 	overflow: hidden;
-	backface-visibility: hidden;
+	background-color: rgb( 150, 150, 150 );
 }
 
 .topnav a{
 	float: right;
     color: White;
+	display: block;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    padding: 20px 16px;
 	font-family: arial;
+    text-decoration: none;
+	margin: 0px;
 }
 
 .topnav a:hover {
     color: black;
 }
 
-img {
+#Self {
 	border-radius: 150px;
-	/*border: 5px solid white;*/
+	padding: 10px;
 	width: 200px;
 	display: block;
 	margin-left: auto;
@@ -26,6 +28,7 @@ img {
 }
 
 body {
+	margin: 0px;
 	background-color: white;
 	background-image: url( "Images/WebsiteOverallBackground.jpg" );
 	background-repeat: no-repeat;
@@ -37,25 +40,28 @@ body {
 	background-image: url( "Images/BackgroundMeme.png" );
 	background-repeat: no-repeat;
 	background-position: top;
-	background-size: 800px 800px;
+	background-size: 800px 750px;
 	border: 5px solid white;
 	width: 500px;
+	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 150px;
 }
 
-h1 {
+#Name {
 	color: rgb( 255, 255, 255 );
 	text-align: center;
 	font-family: arial;
-	font-weight: bold;
 	font-size: 30px;
+	margin: 0px;
 }
 
-h2 {
+#Descrip {
 	color: rgb( 255, 255, 255 );
 	text-align: center;
 	font-family: arial;
 	font-size: 20px;
+	margin-top: 0px;
+	margin-bottom: 10px;
 }
