@@ -1,11 +1,11 @@
 .topnav {
 	overflow: hidden;
-	background-color: rgb( 150, 150, 150 );
+	background-color: rgb(48, 109, 170);
 }
 
 .topnav a{
 	float: right;
-    color: White;
+    color: white;
 	display: block;
     text-align: center;
     padding: 20px 16px;
@@ -18,50 +18,77 @@
     color: black;
 }
 
-#Self {
-	border-radius: 150px;
-	padding: 10px;
-	width: 200px;
+.column {
+	float: left;
+	width: 25%;
+	padding-left: 50px;
+}
+
+.row:after {
+	content: "";
 	display: block;
-	margin-left: auto;
+	clear: both;
+}
+
+#Self {
+	border-radius: 80px;
+	padding: 10px;
+	width: 300px;
+	/*display: block;*/
+	margin-top: 100px;
+	/*margin-left: auto;*/
 	margin-right: auto;
 }
 
 body {
 	margin: 0px;
 	background-color: white;
-	background-image: url( "Images/WebsiteOverallBackground.jpg" );
+	background-image: url( "Images/background3.jpg" );
 	background-repeat: no-repeat;
 	background-position: center top;
-	background-size: cover;
+	background-size: 103.25%;
+	position: relative;
 }
 
 #Introduction{
-	background-image: url( "Images/BackgroundMeme.png" );
-	background-repeat: no-repeat;
-	background-position: top;
-	background-size: 800px 750px;
-	border: 5px solid white;
-	width: 500px;
-	margin-top: 20px;
+	border: 2px solid rgb( 48, 109, 170 );
+	background-color: rgb(0, 0, 0);
+	width: auto;
+	margin-top: 100px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-bottom: 150px;
+	padding: 10px;
+	padding-top: 5px;
 }
 
 #Name {
-	color: rgb( 255, 255, 255 );
+	color: rgb(48, 109, 170);
 	text-align: center;
 	font-family: arial;
 	font-size: 30px;
-	margin: 0px;
+	margin-bottom: 0px;
 }
 
 #Descrip {
-	color: rgb( 255, 255, 255 );
+	color: rgb(48, 109, 170);
 	text-align: center;
 	font-family: arial;
 	font-size: 20px;
 	margin-top: 0px;
 	margin-bottom: 10px;
+}
+
+#Descrip2 {
+	color: rgb(48, 109, 170);
+	text-align: left;
+	font-family: arial;
+	font-size: 20px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+#Logos {
+	width: 75px;
+	margin-left: auto;
+	margin-right: auto;
 }
