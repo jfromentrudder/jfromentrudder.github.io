@@ -50,9 +50,18 @@ body {
 	position: relative;
 }
 
+.footer {
+	position: fixed;
+	text-align: center;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: white;
+}
+
 #Introduction{
 	border: 2px solid rgb( 48, 109, 170 );
-	background-color: rgb(0, 0, 0);
+	background-color: white;
 	width: auto;
 	margin-top: 100px;
 	margin-left: auto;
@@ -89,6 +98,7 @@ body {
 
 #Logos {
 	width: 75px;
-	margin-left: auto;
+	margin-left: 20px;
 	margin-right: auto;
+	margin-bottom: auto;
 }
