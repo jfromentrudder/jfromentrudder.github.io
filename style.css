@@ -40,15 +40,6 @@
 	margin-right: auto;
 }
 
-body {
-	margin: 0px;
-	background-image: url( "Images/background3.jpg" );
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-size: cover;
-	position: relative;
-}
-
 .footer {
 	position: fixed;
 	text-align: center;
@@ -62,11 +53,24 @@ body {
 	color: white;
 }
 
+body {
+	margin: 0px;
+	background-image: url( "Images/background3.jpg" );
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	position: relative;
+}
+
+div {
+	overflow: hidden;
+}
+
 #Introduction {
 	border: 2px solid rgb( 48, 109, 170 );
 	background-color: white;
 	width: 770px;
-	margin-top: 75px;
+	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 10px;
