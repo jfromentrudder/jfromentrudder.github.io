@@ -33,7 +33,7 @@
 #Self {
 	border-radius: 80px;
 	padding: 10px;
-	width: 300px;
+	width: 90%;
 	/*display: block;*/
 	margin-top: 100px;
 	/*margin-left: auto;*/
@@ -69,7 +69,7 @@ div {
 #Introduction {
 	border: 2px solid rgb( 48, 109, 170 );
 	background-color: white;
-	width: 770px;
+	width: 60%;
 	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto;
