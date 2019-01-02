@@ -1,9 +1,9 @@
-.topnav {
+ul.topnav {
 	overflow: hidden;
 	background-color: rgb(48, 109, 170);
 }
 
-.topnav a{
+ul.topnav a{
 	float: right;
     color: white;
 	display: block;
@@ -14,14 +14,36 @@
 	margin: 0px;
 }
 
-.topnav a:hover {
+ul.topnav a:hover {
     color: black;
 }
 
+ul.topnav li {
+	float: right;
+	position: sticky;
+}
+
 .column {
-	float: left;
+	float: none;
 	width: 25%;
-	padding-left: 50px;
+}
+
+.left, .right {
+	float: left;
+	width: 20%;
+}
+
+.main {
+	float: left;
+	width: 60%;
+}
+
+@media screen and (max-width: 800px) {
+	.left, .main, .right {
+		width: 100%;
+	}
+	ul.topnav li.right,
+	ul.topnav li{ float: none; }
 }
 
 .row:after {
@@ -30,14 +52,18 @@
 	clear: both;
 }
 
-#Self {
-	border-radius: 80px;
-	padding: 10px;
-	width: 90%;
-	/*display: block;*/
-	margin-top: 100px;
-	/*margin-left: auto;*/
-	margin-right: auto;
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a[href^="mailto"] {
+	color: white;
+}
+
+a[href^="mailto"]:hover {
+	color: black;
 }
 
 .footer {
@@ -46,18 +72,16 @@
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	height: 11%;
+	height: 7.5%;
 	background-color: rgb( 48, 109, 170) ;
 	font-family: arial;
-	font-size: 14.5px;
+	font-size: 14px;
 	color: white;
 }
 
 body {
 	margin: 0px;
-	background-image: url( "Images/background3.jpg" );
-	background-repeat: no-repeat;
-	background-position: center top;
+	background: url( "Images/background3.jpg" ) no-repeat center fixed;
 	background-size: cover;
 	position: relative;
 }
@@ -66,38 +90,93 @@ div {
 	overflow: hidden;
 }
 
+ul {
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	float: left;
+}
+
+#Self {
+	border-radius: 80px;
+	padding: 5px;
+	padding-bottom: 2px;
+	width: 50%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	clear: both;
+	float: none;
+	max-width: 100%;
+}
+
 #Introduction {
-	border: 2px solid rgb( 48, 109, 170 );
+	width: 60%;
+	margin-bottom: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	clear: both;
+	overflow: auto;
+}
+
+#Introduction2 {
+	border: 5px solid rgb( 48, 109, 170 );
 	background-color: white;
 	width: 60%;
-	margin-top: 50px;
+	margin-top: 1%;
+	margin-bottom: 70px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 10px;
 	padding-top: 5px;
+	float: none;
+	clear: both;
+	overflow: auto;
 }
 
 #Name {
-	color: rgb(48, 109, 170);
+	color: rgb(255, 255, 255);
+	text-shadow: 1.5px 1.5px #000000;
 	text-align: center;
 	font-family: arial;
-	font-size: 30px;
+	font-size: 36px;
 	margin-bottom: 0px;
 }
 
 #Descrip {
-	color: rgb(48, 109, 170);
+	color: rgb(255, 255, 255);
+	text-shadow: 1.5px 1.5px #000000;
 	text-align: center;
 	font-family: arial;
-	font-size: 20px;
+	font-size: 24px;
 	margin-top: 0px;
 	margin-bottom: 10px;
 }
 
-#Bio {
-	text-align: left;
+#Descrip2 {
+	color: rgb(0, 0, 0);
+	text-align: center;
 	font-family: arial;
-	font-size: 15px;
+	font-size: 24px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+#About {
+	text-align: center;
+	font-family: arial;
+}
+
+#Bio {
+	text-align: justify;
+	font-family: arial;
+	font-size: 16px;
+	word-break: keep-all;
 }
 
 #Logo1 {
