@@ -4,10 +4,16 @@ body {
 }
 
 .navbar {
-	background: #4e4b5c;
 	height: 2.85rem;
 }
 
 .navbar .navbar-toggler-icon {
 	height: 1em;
 }
+
+.navbar-dark .navbar-nav .nav-link {
+	color: #4e4b5c;
+}
+
+/* #splash {
+} */
