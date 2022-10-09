@@ -1,6 +1,9 @@
 body {
 	font-family: 'Roboto', sans-serif;
-	background: #bdadea;
+}
+
+.container {
+	display: flex;
 }
 
 .navbar {
@@ -15,5 +18,8 @@ body {
 	color: #4e4b5c;
 }
 
-/* #splash {
-} */
+#portrait {
+	height: 30%;
+	width: 30%;
+	border-radius: 10px;
+}
