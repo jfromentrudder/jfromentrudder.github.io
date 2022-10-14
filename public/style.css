@@ -1,18 +1,20 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	background-color: #343433;
+	margin: 0;
 }
 
 .container {
 	display: flex;
 	flex-direction: row;
+	justify-content: flex-start;
 }
 
 .navbar {
+	width: 12vw;
 	height: 100%;
 	color: white;
-	position: relative;
-	margin-top: 20px;
+	position: fixed;
 	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
 }
 
@@ -21,12 +23,14 @@ body {
 }
 
 .nav-item {
-	border-bottom: 1px solid #EEF0F2;
+	border-bottom: 1px solid #4e4e4f;
 	padding: 20px 30px 20px 20px;
 }
 
 .nav-item:hover {
 	box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.4);
+	background-color: #494947;
+	cursor: pointer;
 }
 
 .nav-item .nav-link {
@@ -34,29 +38,42 @@ body {
 	text-decoration: none;
 }
 
-.intro {
+.site-heading {
 	color: #EEF0F2;
 }
 
 .main-container {
+	display: flex;
+	flex-direction: column;
 	padding: 50px 30px;
 	margin: auto;
 }
 
-@media (max-width: 500px) {
+.main-container .my-photo img {
+	width: 30%;
+	border-radius: 10px;
+}
+
+.intro-area {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 700px) {
 	.navbar-toggler {
 		display: inline-block;
 	}
-	.brand img {
-		height: 25px;
+	.navbar-brand img {
+		display: none;
 	}
 }
 
-@media (min-width: 500px) {
+@media (min-width: 700px) {
 	.navbar-toggler {
 		display: none;
 	}
-	.brand img {
-		height: 50px;
+	.navbar-brand img {
+		display: block;
+		width: 12vw;
 	}
 }
