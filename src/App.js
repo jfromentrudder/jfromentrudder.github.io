@@ -3,6 +3,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import ScrollToTop from 'react-scroll-to-top';
 
 import './App.css';
 
@@ -13,6 +14,7 @@ function App() {
       <Projects />
       <Skills />
       <Contact />
+      <ScrollToTop smooth={true} top={300} color="white" viewBox="-40 0 256 256" className="inline-block bg-cyan-600 rounded-full hover:bg-cyan-700" />
     </main>
   );
 }
