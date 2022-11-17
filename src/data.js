@@ -4,7 +4,7 @@ export const projects = [
         subtitle: "React and Tailwind",
         description:
             "jfromentrudder.github.io is my personal portfolio website that I built using React and Tailwind. It displays information about myself including some of my projects, my skills, and how to contact me.",
-        image: "jfromentrudder.github.io.png",
+        image: "jfromentrudder.gif",
         link: "/",
     },
     {
