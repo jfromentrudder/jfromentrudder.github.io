@@ -3,7 +3,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
-import ScrollToTop from 'react-scroll-to-top';
+import ScrollToTop from './components/ScrollToTop';
 
 import './App.css';
 
