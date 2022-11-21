@@ -42,6 +42,14 @@ const Projects = () => {
 						</a>
 					))}
 				</div>
+				<div className="flex justify-center py-6">
+						<a
+							href="https://github.com/jfromentrudder"
+							target="_blank"
+							className="ml-4 inline-flex text-white bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 rounded text-xl">
+							Click to view more of my work on Github
+						</a>
+					</div>
 			</div>
 		</section>
 	);
