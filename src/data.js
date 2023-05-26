@@ -13,7 +13,7 @@ export const projects = [
         description:
             "Phuclabs.com is the front-facing marketing site for Phuc Labs, a company working on waste recycling using hydrorobotics. I was given full ownership of building this website from the ground up using HTML, CSS, and JavaScript for the front-end and Python's FastAPI for the back-end.",
         image: "./phuclabs.gif",
-        link: "https://www.phuclabs.com/",
+        link: "/",
     },
     {
         title: "Massrealty.com",
