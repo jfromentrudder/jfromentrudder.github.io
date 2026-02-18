@@ -1,46 +1,64 @@
 import React from "react";
+import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
 import ContactForm from "./ContactForm";
 
 export default function Contact() {
     return (
-        <section id="contact" className="relative">
-            <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
-                <div className="lg:w-2/3 md:w-3/4 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-                    <iframe
-                        width="100%"
-                        height="100%"
-                        title="map"
-                        className="absolute inset-0"
-                        frameBorder={0}
-                        marginHeight={0}
-                        marginWidth={0}
-                        style={{ filter: "opacity(0.8)" }}
-                        src="https://www.google.com/maps/embed/v1/place?q=New+York,+NY,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-                    />
-                    <div className="bg-gray-900 relative flex flex-wrap w-2/3 py-6 rounded shadow-md">
-                        <div className="lg:w-2/5 px-6">
-                            <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                                LOCATION
-                            </h2>
-                            <p className="mt-1">
-                                New York, NY <br /> United States
-                            </p>
-                        </div>
-                        <div className="lg:w-3/5 px-6 mt-4 lg:mt-0">
-                            <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                                EMAIL
-                            </h2>
-                            <a href="/" className="text-indigo-400 leading-relaxed">
-                                jfromentrudder@gmail.com
-                            </a>
-                            <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
-                                PHONE
-                            </h2>
-                            <p className="leading-relaxed">917-889-4666</p>
+        <section id="contact" className="py-20">
+            <div className="container px-6 mx-auto">
+                <div className="text-center mb-16 fade-section">
+                    <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+                        Get In Touch
+                    </h2>
+                    <p className="text-gray-400 max-w-2xl mx-auto">
+                        Interested in working together? Feel free to reach out through the form or any of the channels below.
+                    </p>
+                </div>
+
+                <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
+                    {/* Contact info */}
+                    <div className="md:w-2/5 fade-section">
+                        <div className="space-y-8">
+                            <div className="flex items-start gap-4">
+                                <div className="w-12 h-12 rounded-lg bg-cyan-900/30 border border-cyan-800/30 flex items-center justify-center flex-shrink-0">
+                                    <FaMapMarkerAlt className="w-5 h-5 text-cyan-400" />
+                                </div>
+                                <div>
+                                    <h3 className="text-white font-semibold mb-1">Location</h3>
+                                    <p className="text-gray-400">Brooklyn, NY<br />United States</p>
+                                </div>
+                            </div>
+                            <div className="flex items-start gap-4">
+                                <div className="w-12 h-12 rounded-lg bg-cyan-900/30 border border-cyan-800/30 flex items-center justify-center flex-shrink-0">
+                                    <FaEnvelope className="w-5 h-5 text-cyan-400" />
+                                </div>
+                                <div>
+                                    <h3 className="text-white font-semibold mb-1">Email</h3>
+                                    <a
+                                        href="mailto:jfromentrudder@gmail.com"
+                                        className="text-cyan-400 hover:text-cyan-300 transition-colors"
+                                    >
+                                        jfromentrudder@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="flex items-start gap-4">
+                                <div className="w-12 h-12 rounded-lg bg-cyan-900/30 border border-cyan-800/30 flex items-center justify-center flex-shrink-0">
+                                    <FaPhone className="w-5 h-5 text-cyan-400" />
+                                </div>
+                                <div>
+                                    <h3 className="text-white font-semibold mb-1">Phone</h3>
+                                    <p className="text-gray-400">917-889-4666</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    {/* Contact form */}
+                    <div className="md:w-3/5 fade-section">
+                        <ContactForm />
+                    </div>
                 </div>
-                <ContactForm />
             </div>
         </section>
     );
