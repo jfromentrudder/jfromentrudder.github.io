@@ -1,29 +1,41 @@
-import { CheckBadgeIcon, CpuChipIcon } from "@heroicons/react/24/solid";
+import { CpuChipIcon } from "@heroicons/react/24/solid";
 import React from "react";
-import { skills } from "../data";
+import { skillCategories } from "../data";
 
 export default function Skills() {
     return (
-        <section id="skills">
-            <div className="container px-5 py-10 mx-auto">
-                <div className="text-center mb-20">
-                    <CpuChipIcon className="w-10 inline-block mb-4" />
-                    <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
-                        Skills &amp; Technologies
-                    </h1>
-                    <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-                        A general overview of the skills and technologies I have and have worked with.
+        <section id="skills" className="py-20">
+            <div className="container px-6 mx-auto">
+                <div className="text-center mb-16 fade-section">
+                    <CpuChipIcon className="w-10 inline-block mb-4 text-cyan-400" />
+                    <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+                        Skills & Technologies
+                    </h2>
+                    <p className="text-gray-400 max-w-2xl mx-auto">
+                        A general overview of the skills and technologies I have experience with.
                     </p>
                 </div>
-                <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-                    {skills.map((skill) => (
-                        <div key={skill} className="p-2 sm:w-1/2 w-full">
-                            <div className="bg-gray-800 rounded flex p-4 h-full items-center">
-                                <CheckBadgeIcon className="text-cyan-400 w-6 h-6 flex-shrink-0 mr-4" />
-                                <span className="title-font text-lg font-medium text-white">
-                                    {skill}
-                                </span>
-                            </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+                    {skillCategories.map((group) => (
+                        <div
+                            key={group.category}
+                            className="fade-section bg-zinc-800/50 rounded-xl border border-zinc-700/50 p-6"
+                        >
+                            <h3 className="text-lg font-semibold text-white mb-4 pb-3 border-b border-zinc-700/50">
+                                {group.category}
+                            </h3>
+                            <ul className="space-y-3">
+                                {group.skills.map((skill) => (
+                                    <li
+                                        key={skill}
+                                        className="flex items-center gap-3 text-gray-300"
+                                    >
+                                        <span className="w-2 h-2 rounded-full bg-cyan-400 flex-shrink-0" />
+                                        <span className="text-sm font-medium">{skill}</span>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     ))}
                 </div>
